@@ -24,8 +24,6 @@ def random_headers():
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'}
 
 
-# r = requests.get('https://edmundmartin.com', headers=random_headers())
-
 outputFile = open("outputFile.csv", 'a+')
 fileField = ['Emails', 'Status']
 writer = csv.DictWriter(outputFile, fieldnames=fileField)
